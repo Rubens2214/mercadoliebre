@@ -8,13 +8,13 @@ app.get("/", (req, res) =>{
     res.sendFile(path.join(__dirname, "./views/home.html"));
 });
 
-app.get("/register1", (req, res) =>{
-    res.sendFile(path.join(__dirname, "./views/register1.html"));
+app.get("/register", (req, res) =>{
+    res.sendFile(path.join(__dirname, "./views/register.html"));
 });
 app.get("/ofertas", (req, res) =>{
     res.sendFile(path.join(__dirname, "./views/ofertas.html"));
 });
-app.get("/register1", (req, res) =>{
+app.get("/register", (req, res) =>{
     res.send(Formulario);
 });
 app.post("/crear", (req, res)=>{
